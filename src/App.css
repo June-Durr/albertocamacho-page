@@ -1,0 +1,65 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+.fix-bg {
+  @apply bg-[#0f141c] bg-[url('https://biogi-resume.up2client.com/static/media/noice-img.5b3dfa4894f329855a2f.png')] 
+  bg-cover 
+  bg-center 
+  bg-no-repeat 
+  h-screen 
+  relative 
+  overflow-hidden z-0 bg-blend-soft-light;
+}
+.slick-slide div:first-child {
+  margin-left: 1.5rem; /* 24px */
+  margin-right: 1.5rem; /* 24px */
+}
+.slick-track {
+  padding-bottom: 70px;
+}
+.portfolio-frame .portfolio-details {
+  width: 70%;
+  height: 80%;
+  padding: 5% 8%;
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transform-origin: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.portfolio-frame {
+  perspective: 500px;
+}
+
+.portfolio-frame:hover .portfolio-details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+.portfolio-frame:hover img {
+  filter: brightness(0.5);
+}
+.blog-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* for header active navbar*/
+.active {
+  border-bottom-width: 2px;
+  opacity: 0.8;
+}
+
+/* ADDED */
+.profile-img-main {
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.my-image-class {
+  @apply w-full h-auto;
+}

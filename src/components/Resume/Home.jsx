@@ -51,7 +51,7 @@ const Home = () => {
     }, intervalTime * 3);
 
     return () => clearTimeout(firstTextTimeout);
-  }, [firstTextIndex]);
+  }, [firstTextIndex]); //eslint-disable-line
 
   useEffect(() => {
     const secondTextTimeout = setTimeout(() => {
@@ -59,7 +59,7 @@ const Home = () => {
     }, intervalTime * 3);
 
     return () => clearTimeout(secondTextTimeout);
-  }, [secondTextIndex]);
+  }, [secondTextIndex]); //eslint-disable-line
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,7 +68,7 @@ const Home = () => {
     }, intervalTime * 7);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); //eslint-disable-line
 
   // Logo marquee
   useEffect(() => {

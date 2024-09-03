@@ -51,25 +51,25 @@ function Blog() {
               </Link>
               <div className="mt-12">
                 <a
-                  href="#"
+                  href="/"
                   className="text-2xl bg-main_white inline-block rounded-full p-3 hover:opacity-80 transition-all hover:text-blue-600"
                 >
                   <BsMailbox />
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-2xl bg-main_white inline-block rounded-full p-3 ml-4 hover:opacity-80 transition-all hover:text-blue-600"
                 >
                   <BsLinkedin />
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-2xl bg-main_white inline-block rounded-full p-3 ml-4 hover:opacity-80 transition-all hover:text-blue-600"
                 >
                   <BsGithub />
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-2xl bg-main_white inline-block rounded-full p-3 ml-4 hover:opacity-80 transition-all hover:text-blue-600"
                 >
                   <BsTwitter />

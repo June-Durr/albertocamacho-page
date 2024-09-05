@@ -55,7 +55,7 @@ const WorkResume = () => {
     observer.observe(progressSection);
 
     return () => observer.disconnect();
-  }, [colors]);
+  }, [colors]); //eslint-disable-line
 
   return (
     <>

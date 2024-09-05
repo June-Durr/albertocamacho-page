@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useMemo } from "react";
 import FigmaImg from "../../assets/images/figma-img.png";
 import PhotoShopImg from "../../assets/images/photoshop-img.png";
 import AdobeImg from "../../assets/images/adobe-xd-img.png";
@@ -10,18 +10,14 @@ import WinnerAward3 from "../../assets/images/winner-award3.png";
 import WinnerAward4 from "../../assets/images/winner-award4.png";
 
 const WorkResume = () => {
+  const colors = useMemo(
+    () => ["#BCE70C", "#FF759C", "#00CC97", "#FFDB59", "#6F39FD", "#FF7D61"],
+    []
+  );
   const progressRef = useRef(null);
   const hasAnimated = useRef(false); // Track if the animation has already run
 
   useEffect(() => {
-    const colors = [
-      "#BCE70C",
-      "#FF759C",
-      "#00CC97",
-      "#FFDB59",
-      "#6F39FD",
-      "#FF7D61",
-    ];
     const progressSection = progressRef.current;
     const items = progressSection.querySelectorAll(".progress-item");
     const observerOptions = { threshold: 0.1 };
